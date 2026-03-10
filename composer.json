@@ -1,0 +1,37 @@
+{
+    "name": "psc-acme/worker-user",
+    "description": "Package worker-user for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WorkerUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "guzzlehttp/psr7": "^2.0",
+        "symfony/http-foundation": "^7.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
